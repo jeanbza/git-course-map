@@ -21,9 +21,9 @@ export default [
   {code: "CS 7641", name: "Machine Learning"},
   {code: "CS 7646", name: "Machine Learning for Trading"},
   {code: "CSE 8803", name: "Special Topics: Big Data for Health Informatics"},
-  {code: "CS 8803-O01", name: "Artificial Intelligence for Robotics"},
-  {code: "CS 8803-O02", name: "Introduction to Operating Systems"},
-  {code: "CS 8803-O03", name: "Special Topics: Reinforcement Learning"},
-  {code: "CS 8803-O04", name: "Special Topics: Embedded Software"},
+  {code: "CS 8803-001", name: "Artificial Intelligence for Robotics"},
+  {code: "CS 8803-002", name: "Introduction to Operating Systems"},
+  {code: "CS 8803-003", name: "Special Topics: Reinforcement Learning"},
+  {code: "CS 8803-004", name: "Special Topics: Embedded Software"},
   {code: "CS 8803", name: "O07 Special Topics: Cyber-Physical Systems Security"},
 ]

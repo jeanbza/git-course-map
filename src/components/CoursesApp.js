@@ -6,8 +6,12 @@ import courses from '../courses'
 import Specialization from './Specialization'
 import specializations from '../specializations'
 
-const coursesList = courses.map(course => <Course key={course.code} code={course.code} name={course.name}/>)
-const specializationList = specializations.map(specialization => <Specialization key={specialization.name} name={specialization.name}/>)
+const coursesList = courses
+  .sort((a, b) => a.code.localeCompare(b.code))
+  .map(course => <Course key={course.code} code={course.code} name={course.name}/>)
+const specializationList = specializations
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .map(specialization => <Specialization key={specialization.name} name={specialization.name}/>)
 
 export default () => (
   <div id="app">

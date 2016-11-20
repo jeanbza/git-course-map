@@ -1,0 +1,4 @@
+---
+applications:
+- name: omscs-courses
+  command: node server.js

@@ -15,5 +15,9 @@
     "node-sass": "^3.13.0",
     "sass-loader": "^4.0.2",
     "webpack": "^1.13.3"
+  },
+  "engines": {
+    "node": "6.9.0",
+    "npm": "3.10.3"
   }
 }

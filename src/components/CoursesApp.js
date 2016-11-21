@@ -44,7 +44,8 @@ class CourseApp extends React.Component {
                 code={course.code}
                 name={course.name}
                 taken={this.state[course.code]}
-                clickHandler={_ => this.clickHandler(course.code)}/>)
+                clickHandler={_ => this.clickHandler(course.code)}
+                reviewLink={course.reviewLink}/>)
   }
 
   specializationList() {

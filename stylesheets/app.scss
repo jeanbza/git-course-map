@@ -6,6 +6,11 @@
   flex: 1;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .inset {
   padding-left: 30px;
 }

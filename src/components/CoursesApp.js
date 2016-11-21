@@ -52,7 +52,8 @@ class CourseApp extends React.Component {
       .map(specialization => <Specialization key={specialization.name}
                                              courses={courses}
                                              checkedCourses={this.state}
-                                             specialization={specialization}/>)
+                                             specialization={specialization}
+                                             courseClickHandler={this.clickHandler.bind(this)}/>)
   }
 }
 

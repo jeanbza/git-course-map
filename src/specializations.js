@@ -14,7 +14,7 @@ export default [
         type: 'three-total-one-of-both',
         subcategories: [
           {
-            courses: ['CS 6475', 'CS 6476', 'CS 7499', 'CS 7636', 'CS 7650', 'CS 8803']
+            courses: ['CS 6475', 'CS 6476', 'CS 7499', 'CS 7636', 'CS 7650', 'CS 8803-xx5']
           },
           {
             courses: ['CS 7630', 'CS 7631', 'CS 7633', 'CS 7649', 'CS 8803-O01']
@@ -53,7 +53,7 @@ export default [
       },
       {
         type: 'two-of',
-        courses: ['CS 6440', 'CS 6460', 'CS 6465', 'CS 7634', 'CS 8803', 'CS 7632', 'CS 7650', 'CS 8803', 'CS 6795', 'CS 7610', 'CS 8803']
+        courses: ['CS 6440', 'CS 6460', 'CS 6465', 'CS 7634', 'CS 8803-xx3', 'CS 7632', 'CS 7650', 'CS 8803-xx2', 'CS 6795', 'CS 7610', 'CS 8803-xx1']
       }
     ]
   },
@@ -70,7 +70,7 @@ export default [
       },
       {
         type: 'three-of',
-        courses: ['CS 7540', 'CS 7545', 'CS 7616', 'CS 7646', 'CS 7650', 'CS 8803', 'CSE 6240', 'CSE 6242']
+        courses: ['CS 7540', 'CS 7545', 'CS 7616', 'CS 7646', 'CS 7650', 'CS 8803-xx4', 'CSE 6240', 'CSE 6242']
       }
     ]
   }

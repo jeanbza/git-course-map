@@ -6,22 +6,54 @@ import courses from '../courses'
 import Specialization from './Specialization'
 import specializations from '../specializations'
 
-const coursesList = courses
-  .sort((a, b) => a.code.localeCompare(b.code))
-  .map(course => <Course key={course.code} code={course.code} name={course.name}/>)
-const specializationList = specializations
-  .sort((a, b) => a.name.localeCompare(b.name))
-  .map(specialization => <Specialization key={specialization.name} name={specialization.name}/>)
+class CourseApp extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = courses.reduce((map, course) => {
+      map[course.code] = false
+      return map
+    }, {})
+  }
 
-export default () => (
-  <div id="app">
-    <div id="courses">
-      <h2>Courses</h2>
-      {coursesList}
-    </div>
-    <div id="specializations">
-      <h2>Specializations</h2>
-      {specializationList}
-    </div>
-  </div>
-)
+  render() {
+    return (
+      <div id="app">
+        <div id="courses">
+          <h2>Courses</h2>
+          {this.courseList()}
+        </div>
+        <div id="specializations">
+          <h2>Specializations</h2>
+          {this.specializationList()}
+        </div>
+      </div>
+    )
+  }
+
+  clickHandler(code) {
+    const newState = {}
+    newState[code] = !this.state[code]
+    this.setState(newState)
+  }
+
+  courseList() {
+    return courses
+      .sort((a, b) => a.code.localeCompare(b.code))
+      .map(course => <Course key={course.code}
+                             code={course.code}
+                             name={course.name}
+                             taken={this.state[course.code]}
+                             clickHandler={_ => this.clickHandler(course.code)}/>)
+  }
+
+  specializationList() {
+    return specializations
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map(specialization => <Specialization key={specialization.name}
+                                             courses={courses}
+                                             checkedCourses={this.state}
+                                             specialization={specialization}/>)
+  }
+}
+
+export default CourseApp

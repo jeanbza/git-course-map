@@ -7,11 +7,12 @@ export default ({allCourses, checkedCourses, type, groupCourses, courseClickHand
     map[course.code] = course.name
     return map
   }, {})
-  const courses = groupCourses.map(courseCode => <Course key={courseCode}
-                                                         code={courseCode}
-                                                         taken={checkedCourses[courseCode]}
-                                                         name={courseNamesByCode[courseCode]}
-                                                         clickHandler={_ => courseClickHandler(courseCode)}/>)
+  const courses = groupCourses.map(courseCode =>
+    <Course key={courseCode}
+            code={courseCode}
+            taken={checkedCourses[courseCode]}
+            name={courseNamesByCode[courseCode]}
+            clickHandler={_ => courseClickHandler(courseCode)}/>)
   return (
     <div>
       {type}

@@ -39,21 +39,23 @@ class CourseApp extends React.Component {
   courseList() {
     return courses
       .sort((a, b) => a.code.localeCompare(b.code))
-      .map(course => <Course key={course.code}
-                             code={course.code}
-                             name={course.name}
-                             taken={this.state[course.code]}
-                             clickHandler={_ => this.clickHandler(course.code)}/>)
+      .map(course =>
+        <Course key={course.code}
+                code={course.code}
+                name={course.name}
+                taken={this.state[course.code]}
+                clickHandler={_ => this.clickHandler(course.code)}/>)
   }
 
   specializationList() {
     return specializations
       .sort((a, b) => a.name.localeCompare(b.name))
-      .map(specialization => <Specialization key={specialization.name}
-                                             courses={courses}
-                                             checkedCourses={this.state}
-                                             specialization={specialization}
-                                             courseClickHandler={this.clickHandler.bind(this)}/>)
+      .map(specialization =>
+        <Specialization key={specialization.name}
+                        courses={courses}
+                        checkedCourses={this.state}
+                        specialization={specialization}
+                        courseClickHandler={this.clickHandler.bind(this)}/>)
   }
 }
 

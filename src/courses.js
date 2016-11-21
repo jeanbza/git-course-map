@@ -1,4 +1,10 @@
 export default [
+  {code: 'CS 7630', name: 'Autonomous Robotics'},
+  {code: 'CS 7631', name: 'Autonomous Multi-Robot Systems'},
+  {code: 'CS 7633', name: 'Human-Robot Interaction'},
+  {code: 'CS 7649', name: 'Robot Intelligence: Planning'},
+  {code: 'CS 7499', name: '3D Reconstruction'},
+  {code: 'CS 7636', name: 'Computational Perception'},
   {code: 'CS 6241', name: 'Compiler Design'},
   {code: 'CS 6035', name: 'Introduction to Information Security'},
   {code: 'CS 6210', name: 'Advanced Operating Systems'},

@@ -11,15 +11,16 @@ export default [
         courses: ['CS 6601', 'CS 7641']
       },
       {
-        type: 'three-total-one-of-both',
-        subcategories: [
-          {
-            courses: ['CS 6475', 'CS 6476', 'CS 7499', 'CS 7636', 'CS 7650', 'CS 8803-xx5']
-          },
-          {
-            courses: ['CS 7630', 'CS 7631', 'CS 7633', 'CS 7649', 'CS 8803-O01']
-          }
-        ]
+        type: 'one-of',
+        courses: ['CS 6475', 'CS 6476', 'CS 7499', 'CS 7636', 'CS 7650', 'CS 8803-xx5']
+      },
+      {
+        type: 'one-of',
+        courses: ['CS 7630', 'CS 7631', 'CS 7633', 'CS 7649', 'CS 8803-001']
+      },
+      {
+        type: 'one-of',
+        courses: ['CS 6475', 'CS 6476', 'CS 7499', 'CS 7636', 'CS 7650', 'CS 8803-xx5', 'CS 7630', 'CS 7631', 'CS 7633', 'CS 7649', 'CS 8803-001']
       }
     ]
   },

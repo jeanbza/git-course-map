@@ -15,9 +15,7 @@ export default ({allCourses, checkedCourses, type, groupCourses, courseClickHand
   return (
     <div>
       {type}
-      <div>
-        {courses}
-      </div>
+      <div className="inset"> {courses}</div>
     </div>
   )
 }

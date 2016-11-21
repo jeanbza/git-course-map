@@ -1,4 +1,5 @@
 export default [
+  {code: 'CS 6241', name: 'Compiler Design'},
   {code: 'CS 6035', name: 'Introduction to Information Security'},
   {code: 'CS 6210', name: 'Advanced Operating Systems'},
   {code: 'CSE 6140', name: 'Computational Science and Engineering Algorithms'},

@@ -14,7 +14,7 @@ export default ({courses, checkedCourses, specialization, courseClickHandler}) =
   return (
     <div>
       <strong>{name}</strong>
-      {groups}
+      <div className="inset">{groups}</div>
     </div>
   )
 }

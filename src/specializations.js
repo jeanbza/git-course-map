@@ -1,4 +1,4 @@
-export default [
+const specializations = [
   {
     name: 'Computational Perception and Robotics',
     required: [
@@ -76,3 +76,7 @@ export default [
     ]
   }
 ]
+
+export default specializations
+
+// export default specializations.map()

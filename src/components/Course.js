@@ -3,38 +3,43 @@ import React from 'react'
 class Course extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {showMoreNotLess: false}
+    this.state = {buttonClicked: false}
   }
 
   render() {
-    const {course, taken, clickHandler} = this.props
-    const {code, name, more, state} = course
-
-    const className = state === 'OFFERED' ? 'course' : 'course course--not-offered'
-    const buttonText = this.state.showMoreNotLess ? 'Less' : 'More'
-    const button = more ?
-      <small className="more" onClick={this.handleMoreClick.bind(this)}>{buttonText}</small> :
-      <div></div>
+    const {course, clickHandler} = this.props
+    const {code, name, moreInformation, state, taken} = course
 
     return (
-      <div className={className}>
-        <input type="checkbox" checked={taken} onClick={clickHandler}/>
+      <div className={this.className(state)}>
+        <input type="checkbox" checked={taken === true} onClick={_ => clickHandler(code)}/>
         {code}: {name}
-        {button}
-        {this.extras(this.state.showMoreNotLess, more)}
+        {this.button(moreInformation, this.handleMoreClick.bind(this))}
+        {this.extras(this.state.buttonClicked, moreInformation)}
       </div>
     )
   }
 
   handleMoreClick() {
-    this.setState({showMoreNotLess: !this.state.showMoreNotLess})
+    this.setState({buttonClicked: !this.state.buttonClicked})
   }
 
-  extras(showMoreNotLess, more) {
-    if (showMoreNotLess && more) {
+  className(state) {
+    return state === 'OFFERED' ? 'course' : 'course course--not-offered'
+  }
+
+  button(moreInformation, clickHandler) {
+    const buttonText = this.state.buttonClicked ? 'Less' : 'More'
+    return moreInformation ?
+      <small className="more" onClick={clickHandler}>{buttonText}</small> :
+      <div></div>
+  }
+
+  extras(buttonClicked, moreInformation) {
+    if (buttonClicked && moreInformation) {
       return (
         <div className="inset">
-          <a href={more.reviewLink} target="_blank">Course reviews</a>
+          <a href={moreInformation.reviewLink} target="_blank">Course reviews</a>
         </div>
       )
     }

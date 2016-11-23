@@ -2,7 +2,9 @@
   "dependencies": {
     "express": "^4.14.0",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",

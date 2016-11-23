@@ -8,15 +8,16 @@ class Course extends React.Component {
 
   render() {
     const {course, taken, clickHandler} = this.props
-    const {code, name, more} = course
+    const {code, name, more, state} = course
 
+    const className = state === 'OFFERED' ? 'course' : 'course course--not-offered'
     const buttonText = this.state.showMoreNotLess ? 'Less' : 'More'
     const button = more ?
       <small className="more" onClick={this.handleMoreClick.bind(this)}>{buttonText}</small> :
       <div></div>
 
     return (
-      <div>
+      <div className={className}>
         <input type="checkbox" checked={taken} onClick={clickHandler}/>
         {code}: {name}
         {button}

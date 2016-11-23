@@ -1,34 +1,48 @@
+const states = {
+  REMOVED: 'REMOVED',
+  OFFERED: 'OFFERED',
+  FUTURE: 'FUTURE',
+}
+
 export default [
   {
     code: 'CS 7630',
+    state: states.REMOVED,
     name: 'Autonomous Robotics'
   },
   {
     code: 'CS 7631',
+    state: states.REMOVED,
     name: 'Autonomous Multi-Robot Systems'
   },
   {
     code: 'CS 7633',
+    state: states.REMOVED,
     name: 'Human-Robot Interaction'
   },
   {
     code: 'CS 7649',
+    state: states.REMOVED,
     name: 'Robot Intelligence: Planning'
   },
   {
     code: 'CS 7499',
+    state: states.REMOVED,
     name: '3D Reconstruction'
   },
   {
     code: 'CS 7636',
+    state: states.REMOVED,
     name: 'Computational Perception'
   },
   {
     code: 'CS 6241',
+    state: states.REMOVED,
     name: 'Compiler Design'
   },
   {
     code: 'CS 6035',
+    state: states.OFFERED,
     name: 'Introduction to Information Security',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6035'
@@ -36,6 +50,7 @@ export default [
   },
   {
     code: 'CS 6210',
+    state: states.OFFERED,
     name: 'Advanced Operating Systems',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6210'
@@ -43,10 +58,12 @@ export default [
   },
   {
     code: 'CSE 6140',
+    state: states.REMOVED,
     name: 'Computational Science and Engineering Algorithms'
   },
   {
     code: 'CSE 6220',
+    state: states.OFFERED,
     name: 'Intro to High-Performance Computing',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6220'
@@ -54,6 +71,7 @@ export default [
   },
   {
     code: 'CSE 6242',
+    state: states.OFFERED,
     name: 'Data and Visual Analytics',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6242'
@@ -61,6 +79,7 @@ export default [
   },
   {
     code: 'CS 6250',
+    state: states.OFFERED,
     name: 'Computer Networks',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6250'
@@ -68,6 +87,7 @@ export default [
   },
   {
     code: 'CS 6262',
+    state: states.OFFERED,
     name: 'Network Security',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6262'
@@ -75,58 +95,72 @@ export default [
   },
   {
     code: 'CS 6235',
+    state: states.REMOVED,
     name: 'Real Time Systems'
   },
   {
     code: 'CS 6238',
+    state: states.REMOVED,
     name: 'Secure Computer Systems'
   },
   {
     code: 'CS 6260',
+    state: states.REMOVED,
     name: 'Applied Cryptography'
   },
   {
     code: 'CS 6365',
+    state: states.REMOVED,
     name: 'Introduction to Enterprise Computing'
   },
   {
     code: 'CS 6422',
+    state: states.REMOVED,
     name: 'Database System Implementation'
   },
   {
     code: 'CS 6675',
+    state: states.REMOVED,
     name: 'Advanced Internet Computing Systems and Applications'
   },
   {
     code: 'CS 7210',
+    state: states.REMOVED,
     name: 'Distributed Computing'
   },
   {
     code: 'CS 7260',
+    state: states.REMOVED,
     name: 'Internetworking Architectures and Protocols'
   },
   {
     code: 'CS 7270',
+    state: states.REMOVED,
     name: 'Networked Applications and Services'
   },
   {
     code: 'CS 7290',
+    state: states.REMOVED,
     name: 'Advanced Topics in Microarchitecture'
   },
   {
     code: 'CS 7292',
+    state: states.REMOVED,
     name: 'Reliability and Security in Computer Architecture'
   },
   {
     code: 'CS 7560',
+    state: states.REMOVED,
     name: 'Theory of Cryptography'
   },
   {
     code: 'CS 7620',
+    state: states.REMOVED,
     name: 'Case-Based Reasoning'
   },
   {
     code: 'CS 6465',
+    state: states.FUTURE,
     name: 'Computational Journalism',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6465'
@@ -134,66 +168,82 @@ export default [
   },
   {
     code: 'CS 7634',
+    state: states.REMOVED,
     name: 'AI Storytelling in Virtual Worlds'
   },
   {
     code: 'CS 7632',
+    state: states.REMOVED,
     name: 'Game AI'
   },
   {
     code: 'CS 7650',
+    state: states.REMOVED,
     name: 'Natural Language'
   },
   {
     code: 'CS 6795',
+    state: states.REMOVED,
     name: 'Introduction to Cognitive Science'
   },
   {
     code: 'CS 7610',
+    state: states.REMOVED,
     name: 'Modeling and Design'
   },
   {
     code: 'CS 7510',
+    state: states.REMOVED,
     name: 'Graph Algorithms'
   },
   {
     code: 'CSE 6740',
+    state: states.REMOVED,
     name: 'Computational Data Analysis: Learning, Mining, and Computation'
   },
   {
     code: 'CS 7540',
+    state: states.REMOVED,
     name: 'Spectral Algorithms'
   },
   {
     code: 'CS 7545',
+    state: states.REMOVED,
     name: 'Machine Learning Theory'
   },
   {
     code: 'CS 7616',
+    state: states.REMOVED,
     name: 'Pattern Recognition'
   },
   {
     code: 'CSE 6240',
+    state: states.REMOVED,
     name: 'Web Search and Text Mining'
   },
   {
     code: 'CS 6520',
+    state: states.REMOVED,
     name: 'Computational Complexity Theory'
   },
   {
     code: 'CS 6550',
+    state: states.REMOVED,
     name: 'Design and Analysis of Algorithms'
   },
   {
     code: 'CS 7520',
+    state: states.REMOVED,
     name: 'Approximation Algorithms'
   },
   {
     code: 'CS 7530',
+    state: states.REMOVED,
     name: 'Randomized Algorithms'
   },
   {
     code: 'CS 6290',
+    state: states.OFFERED,
     name: 'High Performance Computer Architecture',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6290'
@@ -201,6 +251,7 @@ export default [
   },
   {
     code: 'CS 6300',
+    state: states.OFFERED,
     name: 'Software Development Process',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6300'
@@ -208,6 +259,7 @@ export default [
   },
   {
     code: 'CS 6310',
+    state: states.OFFERED,
     name: 'Software Architecture and Design',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6310'
@@ -215,6 +267,7 @@ export default [
   },
   {
     code: 'CS 6340',
+    state: states.OFFERED,
     name: 'Software Analysis and Test',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6340'
@@ -222,6 +275,7 @@ export default [
   },
   {
     code: 'CS 6400',
+    state: states.OFFERED,
     name: 'Database Systems Concepts and Design',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6400'
@@ -229,6 +283,7 @@ export default [
   },
   {
     code: 'CS 6440',
+    state: states.OFFERED,
     name: 'Intro to Health Informatics',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6440'
@@ -236,6 +291,7 @@ export default [
   },
   {
     code: 'CS 6460',
+    state: states.OFFERED,
     name: 'Educational Technology',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6460'
@@ -243,6 +299,7 @@ export default [
   },
   {
     code: 'CS 6475',
+    state: states.OFFERED,
     name: 'Computational Photography',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6475'
@@ -250,6 +307,7 @@ export default [
   },
   {
     code: 'CS 6476',
+    state: states.OFFERED,
     name: 'Computer Vision',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6476'
@@ -257,6 +315,7 @@ export default [
   },
   {
     code: 'CS 6505',
+    state: states.OFFERED,
     name: 'Computability, Complexity and Algorithms',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6505'
@@ -264,6 +323,7 @@ export default [
   },
   {
     code: 'CS 6601',
+    state: states.OFFERED,
     name: 'Artificial Intelligence',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6601'
@@ -271,6 +331,7 @@ export default [
   },
   {
     code: 'CS 6750',
+    state: states.OFFERED,
     name: 'Human-Computer Interaction',
     more: {
       reviewLink: 'https://omscentral.com/reviews/6750'
@@ -278,6 +339,7 @@ export default [
   },
   {
     code: 'CS 7637',
+    state: states.OFFERED,
     name: 'Knowledge-Based Artificial Intelligence: Cognitive Systems',
     more: {
       reviewLink: 'https://omscentral.com/reviews/7637'
@@ -285,6 +347,7 @@ export default [
   },
   {
     code: 'CS 7641',
+    state: states.OFFERED,
     name: 'Machine Learning',
     more: {
       reviewLink: 'https://omscentral.com/reviews/7641'
@@ -292,6 +355,7 @@ export default [
   },
   {
     code: 'CS 7646',
+    state: states.OFFERED,
     name: 'Machine Learning for Trading',
     more: {
       reviewLink: 'https://omscentral.com/reviews/7646'
@@ -299,14 +363,17 @@ export default [
   },
   {
     code: 'CSE 8803',
+    state: states.OFFERED,
     name: 'Special Topics: Big Data for Health Informatics'
   },
   {
     code: 'CS 8803-FPL',
+    state: states.REMOVED,
     name: 'Special Topics: Foundations of Programming Languages'
   },
   {
     code: 'CS 8803-001',
+    state: states.OFFERED,
     name: 'Artificial Intelligence for Robotics',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-001'
@@ -314,6 +381,7 @@ export default [
   },
   {
     code: 'CS 8803-002',
+    state: states.OFFERED,
     name: 'Introduction to Operating Systems',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-002'
@@ -321,6 +389,7 @@ export default [
   },
   {
     code: 'CS 8803-003',
+    state: states.OFFERED,
     name: 'Special Topics: Reinforcement Learning',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-003'
@@ -328,6 +397,7 @@ export default [
   },
   {
     code: 'CS 8803-004',
+    state: states.OFFERED,
     name: 'Special Topics: Embedded Software',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-004'
@@ -335,6 +405,7 @@ export default [
   },
   {
     code: 'CS 8803-005',
+    state: states.REMOVED,
     name: 'Special Topics: Data Visualization for Health Informatics',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-005'
@@ -342,6 +413,7 @@ export default [
   },
   {
     code: 'CS 8803-006',
+    state: states.REMOVED,
     name: 'Special Topics: Biomedical Analytics',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-006'
@@ -349,6 +421,7 @@ export default [
   },
   {
     code: 'CS 8803-007',
+    state: states.OFFERED,
     name: 'Special Topics: Cyber-Physical Systems Security',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-007'
@@ -356,6 +429,7 @@ export default [
   },
   {
     code: 'CS 8803-008',
+    state: states.OFFERED,
     name: 'Special Topics: Compilers',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803-008'
@@ -363,29 +437,35 @@ export default [
   },
   {
     code: 'CS 8803-xx1',
+    state: states.REMOVED,
     name: 'Special Topics: Computational Creativity'
   },
   {
     code: 'CS 8803-xx2',
+    state: states.REMOVED,
     name: 'Special Topics: Computational Social Science'
   },
   {
     code: 'CS 8803-xx3',
+    state: states.REMOVED,
     name: 'Special Topics: Advanced Game AI'
   },
   {
     code: 'CS 8803-xx4',
+    state: states.REMOVED,
     name: 'Special Topics: Probabilistic Graph Models'
   },
   {
     code: 'CS 8803-xx5',
+    state: states.REMOVED,
     name: 'Special Topics: Multiview Geometry in Computer Vision'
   },
   {
     code: 'CS 8803-xx6',
+    state: states.REMOVED,
     name: 'Graduate Algorithms',
     more: {
       reviewLink: 'https://omscentral.com/reviews/8803'
-    }
+    },
   }
 ]

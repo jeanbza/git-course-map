@@ -41,11 +41,9 @@ class CourseApp extends React.Component {
       .sort((a, b) => a.code.localeCompare(b.code))
       .map(course =>
         <Course key={course.code}
-                code={course.code}
-                name={course.name}
+                course={course}
                 taken={this.state[course.code]}
-                clickHandler={_ => this.clickHandler(course.code)}
-                more={course.more}/>)
+                clickHandler={_ => this.clickHandler(course.code)}/>)
   }
 
   specializationList() {
@@ -53,7 +51,6 @@ class CourseApp extends React.Component {
       .sort((a, b) => a.name.localeCompare(b.name))
       .map(specialization =>
         <Specialization key={specialization.name}
-                        courses={courses}
                         checkedCourses={this.state}
                         specialization={specialization}
                         courseClickHandler={this.clickHandler.bind(this)}/>)

@@ -7,7 +7,9 @@ class Course extends React.Component {
   }
 
   render() {
-    const {code, name, taken, clickHandler, more} = this.props
+    const {course, taken, clickHandler} = this.props
+    const {code, name, more} = course
+
     const buttonText = this.state.showMoreNotLess ? 'Less' : 'More'
     const button = more ?
       <small className="more" onClick={this.handleMoreClick.bind(this)}>{buttonText}</small> :

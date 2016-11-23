@@ -3,33 +3,35 @@ import React from 'react'
 class Course extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {showMore: false}
+    this.state = {showMoreNotLess: false}
   }
 
   render() {
-    const {code, name, taken, clickHandler, reviewLink} = this.props
-    const buttonText = this.state.showMore ? 'Less' : 'More'
+    const {code, name, taken, clickHandler, more} = this.props
+    const buttonText = this.state.showMoreNotLess ? 'Less' : 'More'
+    const button = more ?
+      <small className="more" onClick={this.handleMoreClick.bind(this)}>{buttonText}</small> :
+      <div></div>
 
     return (
       <div>
         <input type="checkbox" checked={taken} onClick={clickHandler}/>
         {code}: {name}
-        <small className="more" onClick={this.handleMoreClick.bind(this)}>{buttonText}</small>
-        {this.extras(this.state.showMore, reviewLink)}
+        {button}
+        {this.extras(this.state.showMoreNotLess, more)}
       </div>
     )
   }
 
   handleMoreClick() {
-    this.setState({showMore: !this.state.showMore})
+    this.setState({showMoreNotLess: !this.state.showMoreNotLess})
   }
 
-  extras(showMore, reviewLink) {
-    console.log(showMore)
-    if (showMore) {
+  extras(showMoreNotLess, more) {
+    if (showMoreNotLess && more) {
       return (
         <div className="inset">
-          <a href={reviewLink} target="_blank">Course reviews</a>
+          <a href={more.reviewLink} target="_blank">Course reviews</a>
         </div>
       )
     }

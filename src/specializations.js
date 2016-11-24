@@ -77,6 +77,15 @@ const specializations = [
   }
 ]
 
-export default specializations
+const specializationsDecorator = specializations => {
+  let i = 0
+  specializations.forEach(s => {
+    s.required.forEach(r => {
+      r.id = i
+      i++
+    })
+  })
+  return specializations
+}
 
-// export default specializations.map()
+export default specializationsDecorator(specializations)

@@ -30,9 +30,7 @@ class CourseApp extends React.Component {
   specializationList() {
     return specializations
       .sort((a, b) => a.name.localeCompare(b.name))
-      .map(specialization =>
-        <Specialization key={specialization.name}
-                        specialization={specialization}/>)
+      .map(specialization => <Specialization key={specialization.name} specialization={specialization}/>)
   }
 }
 

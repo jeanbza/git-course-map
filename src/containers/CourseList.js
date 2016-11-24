@@ -2,9 +2,16 @@ import {connect} from 'react-redux'
 import CourseList from '../components/CourseList'
 import {clickCheckbox} from '../actions/actions'
 
-const filteredCourses = (courses, groupName) => {
-  if (groupName) {
-    return []
+import specializations from '../specializations'
+
+const filteredCourses = (courses, groupId) => {
+  if (groupId !== undefined) {
+    const group = specializations
+      .map(s => s.required)
+      .reduce((a, b) => a.concat(b)) // flatten array of arrays
+      .find(r => r.id === groupId)
+    
+    return courses.filter(c => group.courses.includes(c.code))
   }
 
   return courses

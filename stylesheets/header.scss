@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--left {
+  label {
+    padding-right: 20px;
+  }
+}
+
+.header--right {
+  a {
+    padding-left: 20px;
+  }
+}

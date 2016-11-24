@@ -1,13 +1,15 @@
 import '../stylesheets/app.scss' // required for wepback to build css
 
 import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import {render} from 'react-dom'
+import {Provider} from 'react-redux'
+import {combineReducers, createStore} from 'redux'
 import courses from './reducers/courses'
+import specializations from './reducers/specializations'
 import CoursesApp from './components/CoursesApp'
 
-let store = createStore(courses)
+const rootReducer = combineReducers({courses, specializations})
+let store = createStore(rootReducer)
 
 render(
   <Provider store={store}>

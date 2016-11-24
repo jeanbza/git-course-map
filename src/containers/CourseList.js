@@ -2,9 +2,7 @@ import {connect} from 'react-redux'
 import CourseList from '../components/CourseList'
 import {clickCheckbox} from '../actions/actions'
 
-import specializations from '../specializations'
-
-const filteredCourses = (courses, groupId) => {
+const filteredCourses = (courses, specializations, groupId) => {
   if (groupId !== undefined) {
     const group = specializations
       .map(s => s.required)
@@ -20,7 +18,7 @@ const filteredCourses = (courses, groupId) => {
 const mapStateToProps = (state, ownProps) => {
   const {groupId} = ownProps
   return {
-    courses: filteredCourses(state, groupId)
+    courses: filteredCourses(state.courses, state.specializations, groupId)
   }
 }
 
@@ -32,9 +30,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-const VisibleTodoList = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(CourseList)
-
-export default VisibleTodoList

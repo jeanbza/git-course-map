@@ -1,8 +1,4 @@
-import allCourses from '../courses'
-
-const defaultCoursesDecorator = allCourses =>
-  allCourses.map(course =>
-    Object.assign({taken: false, shown: true}, course))
+import courses from '../courses'
 
 const courseReducer = (course, action) => {
   if (course.code != action.courseCode) {
@@ -19,7 +15,7 @@ const courseReducer = (course, action) => {
   }
 }
 
-export default (state = defaultCoursesDecorator(allCourses), action) => {
+export default (state = courses, action) => {
   const newState = Object.assign([], state)
   return newState.map(course => courseReducer(course, action))
 }

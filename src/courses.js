@@ -4,7 +4,7 @@ const states = {
   FUTURE: 'FUTURE',
 }
 
-export default [
+const courses = [
   {
     code: 'CS 7630',
     state: states.REMOVED,
@@ -469,3 +469,9 @@ export default [
     },
   }
 ]
+
+const coursesDecorator = allCourses =>
+  allCourses.map(course =>
+    Object.assign({taken: false, shown: true}, course))
+
+export default coursesDecorator(courses)

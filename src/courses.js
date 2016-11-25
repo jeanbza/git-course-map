@@ -413,7 +413,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-006',
-    state: states.PREVIOUS,
+    state: states.FUTURE,
     name: 'Special Topics: Biomedical Analytics',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-006'
@@ -466,7 +466,12 @@ const rawCourses = [
     name: 'Graduate Algorithms',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803'
-    },
+    }
+  },
+  {
+    code: 'CS 8803-xx7',
+    state: states.FUTURE,
+    name: 'Special Topics: Data Visualization',
   }
 ]
 

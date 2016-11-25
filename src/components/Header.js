@@ -1,14 +1,15 @@
 import React from 'react'
+import {states} from '../courses'
 
 // emojis here - don't delete whitespace next to a tags
 export default ({filters, handleClick}) => (
   <div className="header">
     <div className="header--left">
-      <input type="checkbox" checked={filters.current} onChange={_ => handleClick('current')}/>
+      <input type="checkbox" checked={filters[states.OFFERED]} onChange={_ => handleClick(states.OFFERED)}/>
       <label>Currently offered</label>
-      <input type="checkbox" checked={filters.previous} onChange={_ => handleClick('previous')}/>
+      <input type="checkbox" checked={filters[states.PREVIOUS]} onChange={_ => handleClick(states.PREVIOUS)}/>
       <label>Previously offered</label>
-      <input type="checkbox" checked={filters.future} onChange={_ => handleClick('future')}/>
+      <input type="checkbox" checked={filters[states.FUTURE]} onChange={_ => handleClick(states.FUTURE)}/>
       <label>Future planned</label>
     </div>
     <div className="header--right">

@@ -1,43 +1,43 @@
 const states = {
-  REMOVED: 'REMOVED',
+  PREVIOUS: 'PREVIOUS',
   OFFERED: 'OFFERED',
   FUTURE: 'FUTURE',
 }
 
-const courses = [
+const rawCourses = [
   {
     code: 'CS 7630',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Autonomous Robotics'
   },
   {
     code: 'CS 7631',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Autonomous Multi-Robot Systems'
   },
   {
     code: 'CS 7633',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Human-Robot Interaction'
   },
   {
     code: 'CS 7649',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Robot Intelligence: Planning'
   },
   {
     code: 'CS 7499',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: '3D Reconstruction'
   },
   {
     code: 'CS 7636',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Computational Perception'
   },
   {
     code: 'CS 6241',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Compiler Design'
   },
   {
@@ -58,7 +58,7 @@ const courses = [
   },
   {
     code: 'CSE 6140',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Computational Science and Engineering Algorithms'
   },
   {
@@ -95,67 +95,67 @@ const courses = [
   },
   {
     code: 'CS 6235',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Real Time Systems'
   },
   {
     code: 'CS 6238',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Secure Computer Systems'
   },
   {
     code: 'CS 6260',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Applied Cryptography'
   },
   {
     code: 'CS 6365',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Introduction to Enterprise Computing'
   },
   {
     code: 'CS 6422',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Database System Implementation'
   },
   {
     code: 'CS 6675',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Advanced Internet Computing Systems and Applications'
   },
   {
     code: 'CS 7210',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Distributed Computing'
   },
   {
     code: 'CS 7260',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Internetworking Architectures and Protocols'
   },
   {
     code: 'CS 7270',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Networked Applications and Services'
   },
   {
     code: 'CS 7290',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Advanced Topics in Microarchitecture'
   },
   {
     code: 'CS 7292',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Reliability and Security in Computer Architecture'
   },
   {
     code: 'CS 7560',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Theory of Cryptography'
   },
   {
     code: 'CS 7620',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Case-Based Reasoning'
   },
   {
@@ -168,77 +168,77 @@ const courses = [
   },
   {
     code: 'CS 7634',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'AI Storytelling in Virtual Worlds'
   },
   {
     code: 'CS 7632',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Game AI'
   },
   {
     code: 'CS 7650',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Natural Language'
   },
   {
     code: 'CS 6795',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Introduction to Cognitive Science'
   },
   {
     code: 'CS 7610',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Modeling and Design'
   },
   {
     code: 'CS 7510',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Graph Algorithms'
   },
   {
     code: 'CSE 6740',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Computational Data Analysis: Learning, Mining, and Computation'
   },
   {
     code: 'CS 7540',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Spectral Algorithms'
   },
   {
     code: 'CS 7545',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Machine Learning Theory'
   },
   {
     code: 'CS 7616',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Pattern Recognition'
   },
   {
     code: 'CSE 6240',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Web Search and Text Mining'
   },
   {
     code: 'CS 6520',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Computational Complexity Theory'
   },
   {
     code: 'CS 6550',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Design and Analysis of Algorithms'
   },
   {
     code: 'CS 7520',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Approximation Algorithms'
   },
   {
     code: 'CS 7530',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Randomized Algorithms'
   },
   {
@@ -368,7 +368,7 @@ const courses = [
   },
   {
     code: 'CS 8803-FPL',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Foundations of Programming Languages'
   },
   {
@@ -405,7 +405,7 @@ const courses = [
   },
   {
     code: 'CS 8803-005',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Data Visualization for Health Informatics',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-005'
@@ -413,7 +413,7 @@ const courses = [
   },
   {
     code: 'CS 8803-006',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Biomedical Analytics',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-006'
@@ -437,32 +437,32 @@ const courses = [
   },
   {
     code: 'CS 8803-xx1',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Computational Creativity'
   },
   {
     code: 'CS 8803-xx2',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Computational Social Science'
   },
   {
     code: 'CS 8803-xx3',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Advanced Game AI'
   },
   {
     code: 'CS 8803-xx4',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Probabilistic Graph Models'
   },
   {
     code: 'CS 8803-xx5',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Special Topics: Multiview Geometry in Computer Vision'
   },
   {
     code: 'CS 8803-xx6',
-    state: states.REMOVED,
+    state: states.PREVIOUS,
     name: 'Graduate Algorithms',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803'
@@ -474,4 +474,6 @@ const coursesDecorator = allCourses =>
   allCourses.map(course =>
     Object.assign({taken: false, shown: true}, course))
 
-export default coursesDecorator(courses)
+const courses = coursesDecorator(rawCourses)
+
+export {states, courses as default}

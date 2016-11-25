@@ -2,8 +2,8 @@ import {states} from '../courses'
 
 const initialState = {}
 initialState[states.OFFERED] = true
-initialState[states.PREVIOUS] = true
-initialState[states.FUTURE] = true
+initialState[states.PREVIOUS] = false
+initialState[states.FUTURE] = false
 
 export default (state = initialState, action) => {
   switch (action.type) {

@@ -7,12 +7,12 @@ class Course extends React.Component {
   }
 
   render() {
-    const {course, clickHandler} = this.props
+    const {course, handleClick} = this.props
     const {code, name, moreInformation, state, taken} = course
 
     return (
       <div className={this.className(state)}>
-        <input type="checkbox" checked={taken === true} onClick={_ => clickHandler(code)}/>
+        <input type="checkbox" checked={taken === true} onClick={_ => handleClick(code)}/>
         {code}: {name}
         {this.button(moreInformation, this.handleMoreClick.bind(this))}
         {this.extras(this.state.buttonClicked, moreInformation)}

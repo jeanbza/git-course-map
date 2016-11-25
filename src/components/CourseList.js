@@ -2,20 +2,20 @@ import React from 'react'
 
 import Course from './Course'
 
-const courseList = (courses, clickHandler) => {
+const courseList = (courses, handleClick) => {
   return courses
     .sort((a, b) => a.code.localeCompare(b.code))
     .map(course => <Course key={course.code}
                            course={course}
-                           taken={false} // TODO
-                           clickHandler={clickHandler} // TODO
+                           taken={false}
+                           handleClick={handleClick}
     />)
 }
 
-export default ({courses, clickCheckbox}) => {
+export default ({courses, handleClick}) => {
   return (
     <div>
-      {courseList(courses, clickCheckbox)}
+      {courseList(courses, handleClick)}
     </div>
   )
 }

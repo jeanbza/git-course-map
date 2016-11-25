@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default () => (
+// emojis here - don't delete whitespace next to a tags
+export default ({filters, handleClick}) => (
   <div className="header">
     <div className="header--left">
-      <input type="checkbox" />
+      <input type="checkbox" checked={filters.current} onChange={_ => handleClick('current')}/>
       <label>Currently offered</label>
-      <input type="checkbox" />
+      <input type="checkbox" checked={filters.previous} onChange={_ => handleClick('previous')}/>
       <label>Previously offered</label>
-      <input type="checkbox" />
+      <input type="checkbox" checked={filters.future} onChange={_ => handleClick('future')}/>
       <label>Future planned</label>
     </div>
     <div className="header--right">

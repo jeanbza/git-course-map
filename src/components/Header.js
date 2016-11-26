@@ -5,7 +5,7 @@ import {states} from '../courses'
 export default ({filters, handleClick}) => (
   <div className="header">
     <div className="header--left">
-      <input type="checkbox" checked={filters[states.OFFERED]} onChange={_ => handleClick(states.OFFERED)}/>
+      <input type="checkbox" checked={filters[states.CURRENT]} onChange={_ => handleClick(states.CURRENT)}/>
       <label>Currently offered</label>
       <input type="checkbox" checked={filters[states.PREVIOUS]} onChange={_ => handleClick(states.PREVIOUS)}/>
       <label>Previously offered</label>

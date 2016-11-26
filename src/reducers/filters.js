@@ -1,7 +1,7 @@
 import {states} from '../courses'
 
 const initialState = {}
-initialState[states.OFFERED] = true
+initialState[states.CURRENT] = true
 initialState[states.PREVIOUS] = false
 initialState[states.FUTURE] = false
 

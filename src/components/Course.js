@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {states} from '../courses'
+
 class Course extends React.Component {
   constructor(props) {
     super(props)
@@ -13,6 +15,7 @@ class Course extends React.Component {
     return (
       <div className={this.className(state)}>
         <input type="checkbox" checked={taken === true} onClick={_ => handleClick(code)}/>
+        <div className="course--indicator"></div>
         {code}: {name}
         {this.button(moreInformation, this.handleMoreClick.bind(this))}
         {this.extras(this.state.buttonClicked, moreInformation)}
@@ -25,7 +28,14 @@ class Course extends React.Component {
   }
 
   className(state) {
-    return state === 'OFFERED' ? 'course' : 'course course--not-offered'
+    switch (state) {
+      case states.CURRENT:
+        return 'course course--current'
+      case states.PREVIOUS:
+        return 'course course--previous'
+      case states.FUTURE:
+        return 'course course--future'
+    }
   }
 
   button(moreInformation, clickHandler) {

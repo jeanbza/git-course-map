@@ -1,0 +1,38 @@
+.course--indicator {
+  border-radius: 2px;
+  display: inline-block;
+  padding: 2px;
+  font-size: .6em;
+  font-weight: bold;
+  margin: 0 5px;
+  &:before {
+    color: white;
+  }
+}
+
+.course--current {
+  .course--indicator {
+    background-color: $green;
+    &:before {
+      content: 'CUR';
+    }
+  }
+}
+
+.course--previous {
+  .course--indicator {
+    background-color: $amber;
+    &:before {
+      content: 'PREV';
+    }
+  }
+}
+
+.course--future {
+  .course--indicator {
+    background-color: $cyan;
+    &:before {
+      content: 'FUT';
+    }
+  }
+}

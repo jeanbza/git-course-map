@@ -1,4 +1,6 @@
+@import './variables';
 @import './header';
+@import './course';
 
 #app {
   display: flex;
@@ -16,8 +18,4 @@
   padding-left: 10px;
   cursor: pointer;
   color: darkgrey;
-}
-
-.course--not-offered {
-  opacity: .3;
 }

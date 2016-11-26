@@ -1,6 +1,6 @@
 const states = {
   PREVIOUS: 'PREVIOUS',
-  OFFERED: 'OFFERED',
+  CURRENT: 'CURRENT',
   FUTURE: 'FUTURE',
 }
 
@@ -42,7 +42,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6035',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Introduction to Information Security',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6035'
@@ -50,7 +50,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6210',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Advanced Operating Systems',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6210'
@@ -63,7 +63,7 @@ const rawCourses = [
   },
   {
     code: 'CSE 6220',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Intro to High-Performance Computing',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6220'
@@ -71,7 +71,7 @@ const rawCourses = [
   },
   {
     code: 'CSE 6242',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Data and Visual Analytics',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6242'
@@ -79,7 +79,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6250',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Computer Networks',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6250'
@@ -87,7 +87,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6262',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Network Security',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6262'
@@ -243,7 +243,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6290',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'High Performance Computer Architecture',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6290'
@@ -251,7 +251,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6300',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Software Development Process',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6300'
@@ -259,7 +259,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6310',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Software Architecture and Design',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6310'
@@ -267,7 +267,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6340',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Software Analysis and Test',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6340'
@@ -275,7 +275,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6400',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Database Systems Concepts and Design',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6400'
@@ -283,7 +283,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6440',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Intro to Health Informatics',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6440'
@@ -291,7 +291,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6460',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Educational Technology',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6460'
@@ -299,7 +299,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6475',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Computational Photography',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6475'
@@ -307,7 +307,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6476',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Computer Vision',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6476'
@@ -315,7 +315,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6505',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Computability, Complexity and Algorithms',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6505'
@@ -323,7 +323,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6601',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Artificial Intelligence',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6601'
@@ -331,7 +331,7 @@ const rawCourses = [
   },
   {
     code: 'CS 6750',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Human-Computer Interaction',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6750'
@@ -339,7 +339,7 @@ const rawCourses = [
   },
   {
     code: 'CS 7637',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Knowledge-Based Artificial Intelligence: Cognitive Systems',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/7637'
@@ -347,7 +347,7 @@ const rawCourses = [
   },
   {
     code: 'CS 7641',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Machine Learning',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/7641'
@@ -355,7 +355,7 @@ const rawCourses = [
   },
   {
     code: 'CS 7646',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Machine Learning for Trading',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/7646'
@@ -363,7 +363,7 @@ const rawCourses = [
   },
   {
     code: 'CSE 8803',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Special Topics: Big Data for Health Informatics'
   },
   {
@@ -373,7 +373,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-001',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Artificial Intelligence for Robotics',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-001'
@@ -381,7 +381,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-002',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Introduction to Operating Systems',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-002'
@@ -389,7 +389,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-003',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Special Topics: Reinforcement Learning',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-003'
@@ -397,7 +397,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-004',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Special Topics: Embedded Software',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-004'
@@ -421,7 +421,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-007',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Special Topics: Cyber-Physical Systems Security',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-007'
@@ -429,7 +429,7 @@ const rawCourses = [
   },
   {
     code: 'CS 8803-008',
-    state: states.OFFERED,
+    state: states.CURRENT,
     name: 'Special Topics: Compilers',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-008'

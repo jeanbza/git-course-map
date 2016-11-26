@@ -6,11 +6,11 @@ export default ({filters, handleClick}) => (
   <div className="header">
     <div className="header--left">
       <input type="checkbox" checked={filters[states.CURRENT]} onChange={_ => handleClick(states.CURRENT)}/>
-      <label>Currently offered</label>
+      <label onClick={_ => handleClick(states.CURRENT)}>Currently offered</label>
       <input type="checkbox" checked={filters[states.PREVIOUS]} onChange={_ => handleClick(states.PREVIOUS)}/>
-      <label>Previously offered</label>
+      <label onClick={_ => handleClick(states.PREVIOUS)}>Previously offered</label>
       <input type="checkbox" checked={filters[states.FUTURE]} onChange={_ => handleClick(states.FUTURE)}/>
-      <label>Future planned</label>
+      <label onClick={_ => handleClick(states.FUTURE)}>Future planned</label>
     </div>
     <div className="header--right">
       🍻 <a target="_blank" href="https://www.patreon.com/user?u=274157">Buy me a beer!</a>

@@ -1,6 +1,11 @@
+@import './reset';
 @import './variables';
 @import './header';
 @import './course';
+
+#app, #foreword {
+  padding: 10px;
+}
 
 #app {
   display: flex;

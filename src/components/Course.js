@@ -16,7 +16,7 @@ class Course extends React.Component {
       <div className={this.className(state)}>
         <input type="checkbox" checked={taken === true} onChange={_ => handleClick(code)}/>
         <div className="course--indicator"></div>
-        {code}: {name}
+        <span className="course--description" onClick={_ => handleClick(code)}>{code}: {name}</span>
         {this.button(moreInformation, this.handleMoreClick.bind(this))}
         {this.extras(this.state.buttonClicked, moreInformation)}
       </div>

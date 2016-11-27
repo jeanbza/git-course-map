@@ -10,6 +10,10 @@
   }
 }
 
+.course--description {
+  cursor: pointer;
+}
+
 .course--current {
   .course--indicator {
     background-color: $green;

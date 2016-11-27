@@ -35,9 +35,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    handleClick: courseCode => {
-      dispatch(clickCheckbox(courseCode))
-    }
+    handleClick: courseCode => dispatch(clickCheckbox(courseCode))
   }
 }
 

@@ -28,3 +28,7 @@ export const addTakenCourse = code => {
   takenCourses.push(code)
   rewriteTakenCourses(takenCourses)
 }
+
+export const resetTakenCourses = _ => {
+  rewriteTakenCourses([])
+}

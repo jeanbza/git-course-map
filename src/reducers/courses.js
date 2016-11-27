@@ -1,5 +1,5 @@
 import courses from '../model/courses'
-import {addTakenCourse, removeTakenCourse} from '../helpers/cookie'
+import {addTakenCourse, removeTakenCourse, resetTakenCourses} from '../helpers/cookie'
 
 const courseReducer = (course, action) => {
   if (course.code != action.courseCode) {
@@ -18,6 +18,14 @@ const courseReducer = (course, action) => {
 }
 
 export default (state = courses, action) => {
-  const newState = Object.assign([], state)
-  return newState.map(course => courseReducer(course, action))
+  switch (action.type) {
+    case 'RESET_TAKEN_COURSES':
+      resetTakenCourses()
+      const resetCourses = Object.assign([], state)
+      resetCourses.forEach(course => course.taken = false)
+      return resetCourses
+    default:
+      const newState = Object.assign([], state)
+      return newState.map(course => courseReducer(course, action))
+  }
 }

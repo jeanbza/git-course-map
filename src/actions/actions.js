@@ -11,3 +11,9 @@ export const clickFilter = id => {
     id: id,
   }
 }
+
+export const resetTakenCourses = _ => {
+  return {
+    type: 'RESET_TAKEN_COURSES'
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import states from '../constants/states'
 
 // emojis here - don't delete whitespace next to a tags
-export default ({filters, handleClick}) => (
+export default ({filters, handleClick, resetTakenCourses}) => (
   <div className="header">
     <div className="header--left">
       <input type="checkbox" checked={filters[states.CURRENT]} onChange={_ => handleClick(states.CURRENT)}/>
@@ -12,6 +12,7 @@ export default ({filters, handleClick}) => (
       <input type="checkbox" checked={filters[states.FUTURE]} onChange={_ => handleClick(states.FUTURE)}/>
       <label onClick={_ => handleClick(states.FUTURE)}>Future planned</label>
     </div>
+    <button onClick={resetTakenCourses}>Reset courses</button>
     <div className="header--right">
       🍻 <a target="_blank" href="https://www.patreon.com/user?u=274157">Buy me a beer!</a>
       📝 <a target="_blank" href="https://github.com/jadekler/git-course-map/issues">Suggestions/feedback</a>

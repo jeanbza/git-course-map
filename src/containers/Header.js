@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import Header from '../components/Header'
-import {clickFilter} from '../actions/actions'
+import {clickFilter, resetTakenCourses} from '../actions/actions'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -10,9 +10,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    handleClick: filterId => {
-      dispatch(clickFilter(filterId))
-    }
+    handleClick: filterId => dispatch(clickFilter(filterId)),
+    resetTakenCourses: _ => dispatch(resetTakenCourses())
   }
 }
 

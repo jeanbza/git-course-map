@@ -1,4 +1,4 @@
-import courses from '../courses'
+import courses from '../model/courses'
 
 const courseReducer = (course, action) => {
   if (course.code != action.courseCode) {

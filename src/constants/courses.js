@@ -1,10 +1,6 @@
-const states = {
-  PREVIOUS: 'PREVIOUS',
-  CURRENT: 'CURRENT',
-  FUTURE: 'FUTURE',
-}
+import states from './states'
 
-const rawCourses = [
+export default [
   {
     code: 'CS 7630',
     state: states.PREVIOUS,
@@ -474,11 +470,3 @@ const rawCourses = [
     name: 'Special Topics: Data Visualization',
   }
 ]
-
-const coursesDecorator = allCourses =>
-  allCourses.map(course =>
-    Object.assign({taken: false, shown: true}, course))
-
-const courses = coursesDecorator(rawCourses)
-
-export {states, courses as default}

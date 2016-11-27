@@ -1,4 +1,4 @@
-import {states} from '../courses'
+import states from '../constants/states'
 
 const initialState = {}
 initialState[states.CURRENT] = true

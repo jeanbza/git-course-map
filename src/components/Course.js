@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {states} from '../courses'
+import states from '../constants/states'
 
 class Course extends React.Component {
   constructor(props) {

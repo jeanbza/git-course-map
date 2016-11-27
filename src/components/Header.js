@@ -1,5 +1,5 @@
 import React from 'react'
-import {states} from '../courses'
+import states from '../constants/states'
 
 // emojis here - don't delete whitespace next to a tags
 export default ({filters, handleClick}) => (

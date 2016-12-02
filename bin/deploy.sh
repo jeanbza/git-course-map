@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+npm install
+npm prune
+./node_modules/.bin/webpack
+
 APP_NAME=omscs-courses
 BLUE_APP_NAME=$APP_NAME             # this is the original
 GREEN_APP_NAME="green-$APP_NAME"    # this is the new

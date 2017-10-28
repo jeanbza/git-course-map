@@ -368,67 +368,67 @@ export default [
     name: 'Special Topics: Foundations of Programming Languages'
   },
   {
-    code: 'CS 8803-001',
+    code: 'CS 8803-O01',
     state: states.CURRENT,
     name: 'Artificial Intelligence for Robotics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-001'
+      reviewLink: 'https://omscentral.com/reviews/8803-O01'
     }
   },
   {
-    code: 'CS 8803-002',
+    code: 'CS 8803-O02',
     state: states.CURRENT,
     name: 'Introduction to Operating Systems',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-002'
+      reviewLink: 'https://omscentral.com/reviews/8803-O02'
     }
   },
   {
-    code: 'CS 8803-003',
+    code: 'CS 8803-O03',
     state: states.CURRENT,
     name: 'Special Topics: Reinforcement Learning',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-003'
+      reviewLink: 'https://omscentral.com/reviews/8803-O03'
     }
   },
   {
-    code: 'CS 8803-004',
+    code: 'CS 8803-O04',
     state: states.CURRENT,
     name: 'Special Topics: Embedded Software',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-004'
+      reviewLink: 'https://omscentral.com/reviews/8803-O04'
     }
   },
   {
-    code: 'CS 8803-005',
+    code: 'CS 8803-O05',
     state: states.PREVIOUS,
     name: 'Special Topics: Data Visualization for Health Informatics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-005'
+      reviewLink: 'https://omscentral.com/reviews/8803-O05'
     }
   },
   {
-    code: 'CS 8803-006',
+    code: 'CS 8803-O06',
     state: states.FUTURE,
     name: 'Special Topics: Biomedical Analytics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-006'
+      reviewLink: 'https://omscentral.com/reviews/8803-O06'
     }
   },
   {
-    code: 'CS 8803-007',
+    code: 'CS 8803-O07',
     state: states.CURRENT,
     name: 'Special Topics: Cyber-Physical Systems Security',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-007'
+      reviewLink: 'https://omscentral.com/reviews/8803-O07'
     }
   },
   {
-    code: 'CS 8803-008',
+    code: 'CS 8803-O08',
     state: states.CURRENT,
     name: 'Special Topics: Compilers',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-008'
+      reviewLink: 'https://omscentral.com/reviews/8803-O08'
     }
   },
   {

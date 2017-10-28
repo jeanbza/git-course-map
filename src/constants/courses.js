@@ -498,7 +498,7 @@ export default [
     state: states.CURRENT,
     name: 'Introduction to Operating Systems',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/'
+      reviewLink: 'https://omscentral.com/reviews/8803-002'
       wikiLink: 'http://omscs.wikidot.com/courses:cs6200'
     }
   },
@@ -515,6 +515,7 @@ export default [
     state: states.CURRENT,
     name: 'Reinforcement Learning',
     moreInformation: {
+      reviewLink: 'https://omscentral.com/reviews/8803-003'
       wikiLink: 'http://omscs.wikidot.com/courses:cs7642'
     }
   },
@@ -531,6 +532,7 @@ export default [
     state: states.CURRENT,
     name: 'Cyber-Physical Design and Analysis ',
     moreInformation: {
+      reviewLink: 'https://omscentral.com/reviews/8803-009'
       wikiLink: 'http://omscs.wikidot.com/courses:cs8803-o09'
     }
   },
@@ -539,7 +541,8 @@ export default [
     state: states.CURRENT,
     name: 'Special Topics: Big Data for Health Informatics',
     moreInformation: {
+      reviewLink: 'https://omscentral.com/reviews/8803-BDHI'
       wikiLink: 'http://omscs.wikidot.com/courses:cse6250'
     }
-  },
+  }
 ]

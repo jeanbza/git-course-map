@@ -311,7 +311,7 @@ export default [
   },
   {
     code: 'CS 6505',
-    state: states.CURRENT,
+    state: states.PREVIOUS,
     name: 'Computability, Complexity and Algorithms',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/6505'
@@ -359,7 +359,7 @@ export default [
   },
   {
     code: 'CSE 8803',
-    state: states.CURRENT,
+    state: states.PREVIOUS,
     name: 'Special Topics: Big Data for Health Informatics'
   },
   {
@@ -377,7 +377,7 @@ export default [
   },
   {
     code: 'CS 8803-O02',
-    state: states.CURRENT,
+    state: states.PREVIOUS,
     name: 'Introduction to Operating Systems',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-O02'
@@ -385,7 +385,7 @@ export default [
   },
   {
     code: 'CS 8803-O03',
-    state: states.CURRENT,
+    state: states.PREVIOUS,
     name: 'Special Topics: Reinforcement Learning',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-O03'
@@ -393,7 +393,7 @@ export default [
   },
   {
     code: 'CS 8803-O04',
-    state: states.CURRENT,
+    state: states.PREVIOUS,
     name: 'Special Topics: Embedded Software',
     moreInformation: {
       reviewLink: 'https://omscentral.com/reviews/8803-O04'
@@ -468,5 +468,40 @@ export default [
     code: 'CS 8803-xx7',
     state: states.FUTURE,
     name: 'Special Topics: Data Visualization',
-  }
+  },
+  {
+    code: 'CS 6200',
+    state: states.CURRENT,
+    name: 'Introduction to Operating Systems',
+  },
+  {
+    code: 'CS 6291',
+    state: states.CURRENT,
+    name: 'Embedded Systems Optimization',
+  },
+  {
+    code: 'CS 7642',
+    state: states.CURRENT,
+    name: 'Reinforcement Learning',
+  },
+  {
+    code: 'CS 8803-GA',
+    state: states.CURRENT,
+    name: 'Graduate Algorithms',
+  },
+  {
+    code: 'CS 8803-O09',
+    state: states.CURRENT,
+    name: 'Cyber-Physical Design and Analysis ',
+  },
+  {
+    code: 'CSE 6250',
+    state: states.CURRENT,
+    name: 'Special Topics: Big Data for Health Informatics',
+  },
+  {
+    code: 'CS 6291',
+    state: states.CURRENT,
+    name: 'Embedded Systems Optimization',
+  },
 ]

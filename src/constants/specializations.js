@@ -33,7 +33,7 @@ export default [
     required: [
       {
         type: 'one-of',
-        courses: ['CS 6505','CS 8803 GA']
+        courses: ['CS 6505','CS 8803-GA']
       },
       {
         type: 'two-of',
@@ -46,7 +46,7 @@ export default [
             'CS 6260', 'CS 6262','CS 6291', 'CS 6310', 'CS 6340', 'CS 6365',
             'CS 6422', 'CS 6550', 'CS 6675', 'CS 7210', 'CS 7260', 'CS 7270',
             'CS 7290', 'CS 7292', 'CS 7560', 'CS 8803-FPL', 'CSE 6220',
-            '8803-O02']
+            'CS 8803-O02']
       }
     ]
   },
@@ -55,7 +55,7 @@ export default [
     required: [
       {
         type: 'one-of',
-        courses: ['CS 6300', 'CS 6505','CS 8803 GA']
+        courses: ['CS 6300', 'CS 6505','CS 8803-GA']
       },
       {
         type: 'two-of',
@@ -75,7 +75,7 @@ export default [
       {
         type: 'one-of',
         courses: ['CS 6505', 'CS 6520', 'CS 6550', 'CS 7510', 'CS 7520',
-            'CS 7530', 'CSE 6140', 'CS 8803 GA']
+            'CS 7530', 'CSE 6140', 'CS 8803-GA']
       },
       {
         type: 'one-of',

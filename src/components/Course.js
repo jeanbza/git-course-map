@@ -49,7 +49,8 @@ class Course extends React.Component {
     if (buttonClicked && moreInformation) {
       return (
         <div className="inset">
-          <a href={moreInformation.reviewLink} target="_blank">Course reviews</a>
+            <a href={moreInformation.reviewLink} target="_blank">Course reviews</a>
+            <a href={moreInformation.wikiLink} target="_blank">Course Wiki</a>
         </div>
       )
     }

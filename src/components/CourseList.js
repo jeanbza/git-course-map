@@ -16,6 +16,7 @@ export default ({courses, handleClick}) => {
   return (
     <div>
       {courseList(courses, handleClick)}
+      You have selected {document.querySelectorAll('#courses input[type="checkbox"]:checked').length} courses. The degree requires 10 courses.
     </div>
   )
 }

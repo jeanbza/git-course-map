@@ -41,7 +41,7 @@ export default [
     state: states.CURRENT,
     name: 'Introduction to Information Security',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6035',
+      reviewLink: 'https://omscentral.com/courses/CS-6035',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6035'
     }
   },
@@ -50,7 +50,7 @@ export default [
     state: states.CURRENT,
     name: 'Advanced Operating Systems',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6210',
+      reviewLink: 'https://omscentral.com/courses/CS-6210',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6210'
     }
   },
@@ -64,7 +64,7 @@ export default [
     state: states.CURRENT,
     name: 'Intro to High-Performance Computing',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6220',
+      reviewLink: 'https://omscentral.com/courses/CSE-6220',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6220'
     }
   },
@@ -73,7 +73,7 @@ export default [
     state: states.CURRENT,
     name: 'Data and Visual Analytics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6242',
+      reviewLink: 'https://omscentral.com/courses/CSE-6242',
       wikiLink: 'http://omscs.wikidot.com/courses:cse6242'
     }
   },
@@ -82,7 +82,7 @@ export default [
     state: states.CURRENT,
     name: 'Computer Networks',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6250',
+      reviewLink: 'https://omscentral.com/courses/CS-6250',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6250'
     }
   },
@@ -91,7 +91,7 @@ export default [
     state: states.CURRENT,
     name: 'Network Security',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6262',
+      reviewLink: 'https://omscentral.com/courses/CS-6262',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6262'
     }
   },
@@ -165,7 +165,7 @@ export default [
     state: states.FUTURE,
     name: 'Computational Journalism',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6465'
+      reviewLink: 'https://omscentral.com/courses/CS-6465'
     }
   },
   {
@@ -248,7 +248,7 @@ export default [
     state: states.CURRENT,
     name: 'High Performance Computer Architecture',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6290',
+      reviewLink: 'https://omscentral.com/courses/CS-6290',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6290'
     }
   },
@@ -257,7 +257,7 @@ export default [
     state: states.CURRENT,
     name: 'Software Development Process',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6300',
+      reviewLink: 'https://omscentral.com/courses/CS-6300',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6300'
     }
   },
@@ -266,7 +266,7 @@ export default [
     state: states.CURRENT,
     name: 'Software Architecture and Design',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6310',
+      reviewLink: 'https://omscentral.com/courses/CS-6310',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6310'
     }
   },
@@ -275,7 +275,7 @@ export default [
     state: states.CURRENT,
     name: 'Software Analysis and Test',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6340',
+      reviewLink: 'https://omscentral.com/courses/CS-6340',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6340'
     }
   },
@@ -284,7 +284,7 @@ export default [
     state: states.CURRENT,
     name: 'Database Systems Concepts and Design',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6400',
+      reviewLink: 'https://omscentral.com/courses/CS-6400',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6400'
     }
   },
@@ -293,7 +293,7 @@ export default [
     state: states.CURRENT,
     name: 'Intro to Health Informatics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6440',
+      reviewLink: 'https://omscentral.com/courses/CS-6440',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6440'
     }
   },
@@ -302,7 +302,7 @@ export default [
     state: states.CURRENT,
     name: 'Educational Technology',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6460',
+      reviewLink: 'https://omscentral.com/courses/CS-6460',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6460'
     }
   },
@@ -311,7 +311,7 @@ export default [
     state: states.CURRENT,
     name: 'Computational Photography',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6475',
+      reviewLink: 'https://omscentral.com/courses/CS-6475',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6475'
     }
   },
@@ -320,7 +320,7 @@ export default [
     state: states.CURRENT,
     name: 'Computer Vision',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6476',
+      reviewLink: 'https://omscentral.com/courses/CS-6476',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6476'
     }
   },
@@ -329,7 +329,7 @@ export default [
     state: states.PREVIOUS,
     name: 'Computability, Complexity and Algorithms',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6505',
+      reviewLink: 'https://omscentral.com/courses/CS-6505',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6505'
     }
   },
@@ -338,7 +338,7 @@ export default [
     state: states.CURRENT,
     name: 'Artificial Intelligence',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6601',
+      reviewLink: 'https://omscentral.com/courses/CS-6601',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6601'
     }
   },
@@ -347,7 +347,7 @@ export default [
     state: states.CURRENT,
     name: 'Human-Computer Interaction',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/6750',
+      reviewLink: 'https://omscentral.com/courses/CS-6750',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6750'
     }
   },
@@ -356,7 +356,7 @@ export default [
     state: states.CURRENT,
     name: 'Knowledge-Based Artificial Intelligence: Cognitive Systems',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/7637',
+      reviewLink: 'https://omscentral.com/courses/CS-7637',
       wikiLink: 'http://omscs.wikidot.com/courses:cs7637'
     }
   },
@@ -365,7 +365,7 @@ export default [
     state: states.CURRENT,
     name: 'Machine Learning',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/7641',
+      reviewLink: 'https://omscentral.com/courses/CS-7641',
       wikiLink: 'http://omscs.wikidot.com/courses:cs7641'
     }
   },
@@ -374,7 +374,7 @@ export default [
     state: states.CURRENT,
     name: 'Machine Learning for Trading',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/7646',
+      reviewLink: 'https://omscentral.com/courses/CS-7646',
       wikiLink: 'http://omscs.wikidot.com/courses:cs7646'
     }
   },
@@ -393,7 +393,7 @@ export default [
     state: states.CURRENT,
     name: 'Artificial Intelligence for Robotics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O01',
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O01',
       wikiLink: 'http://omscs.wikidot.com/courses:cs8803-o01'
     }
   },
@@ -402,7 +402,7 @@ export default [
     state: states.PREVIOUS,
     name: 'Introduction to Operating Systems',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O02'
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O02'
     }
   },
   {
@@ -410,7 +410,7 @@ export default [
     state: states.PREVIOUS,
     name: 'Special Topics: Reinforcement Learning',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O03'
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O03'
     }
   },
   {
@@ -418,7 +418,7 @@ export default [
     state: states.PREVIOUS,
     name: 'Special Topics: Embedded Software',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O04'
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O04'
     }
   },
   {
@@ -426,7 +426,7 @@ export default [
     state: states.PREVIOUS,
     name: 'Special Topics: Data Visualization for Health Informatics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O05'
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O05'
     }
   },
   {
@@ -434,7 +434,7 @@ export default [
     state: states.FUTURE,
     name: 'Special Topics: Biomedical Analytics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O06'
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O06'
     }
   },
   {
@@ -442,7 +442,7 @@ export default [
     state: states.CURRENT,
     name: 'Special Topics: Cyber-Physical Systems Security',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O07',
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O07',
       wikiLink: 'http://omscs.wikidot.com/courses:cs8803-o07'
     }
   },
@@ -451,7 +451,7 @@ export default [
     state: states.CURRENT,
     name: 'Special Topics: Compilers',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-O08',
+      reviewLink: 'https://omscentral.com/courses/CS-8803-O08',
       wikiLink: 'http://omscs.wikidot.com/courses:cs8803-o08'
     }
   },
@@ -485,7 +485,7 @@ export default [
     state: states.PREVIOUS,
     name: 'Graduate Algorithms',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803'
+      reviewLink: 'https://omscentral.com/courses/CS-8803'
     }
   },
   {
@@ -498,7 +498,7 @@ export default [
     state: states.CURRENT,
     name: 'Introduction to Operating Systems',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-002',
+      reviewLink: 'https://omscentral.com/courses/CS-8803-002',
       wikiLink: 'http://omscs.wikidot.com/courses:cs6200'
     }
   },
@@ -515,7 +515,7 @@ export default [
     state: states.CURRENT,
     name: 'Reinforcement Learning',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-003',
+      reviewLink: 'https://omscentral.com/courses/CS-8803-003',
       wikiLink: 'http://omscs.wikidot.com/courses:cs7642'
     }
   },
@@ -532,7 +532,7 @@ export default [
     state: states.CURRENT,
     name: 'Cyber-Physical Design and Analysis ',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-009',
+      reviewLink: 'https://omscentral.com/courses/CS-8803-009',
       wikiLink: 'http://omscs.wikidot.com/courses:cs8803-o09'
     }
   },
@@ -541,7 +541,7 @@ export default [
     state: states.CURRENT,
     name: 'Special Topics: Big Data for Health Informatics',
     moreInformation: {
-      reviewLink: 'https://omscentral.com/reviews/8803-BDHI',
+      reviewLink: 'https://omscentral.com/courses/CSE-8803',
       wikiLink: 'http://omscs.wikidot.com/courses:cse6250'
     }
   }

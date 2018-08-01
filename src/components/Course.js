@@ -50,6 +50,7 @@ class Course extends React.Component {
       return (
         <div className="inset">
             <a href={moreInformation.reviewLink} target="_blank">Course reviews</a>
+            <br>
             <a href={moreInformation.wikiLink} target="_blank">Course Wiki</a>
         </div>
       )
